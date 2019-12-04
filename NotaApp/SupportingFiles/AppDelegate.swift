@@ -12,10 +12,24 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if UserDefaultsManager.getTaskID() == nil
+        {            
+            // start first task with id = 0
+            // to let the first task id = 1
+            
+            UserDefaultsManager.saveTaskID(taskID: 0)
+            
+            print("User Defaults at first was nill and now set to 0 ")
+            
+        }
+        else
+        {
+            print("Last taskID is \(UserDefaultsManager.getTaskID()!)" )
+        }
+        
         return true
     }
 
