@@ -6,6 +6,7 @@ and then he can check or uncheck tasks in the main screen, or remove specific ta
 - SWIFT: iOS Language
 - CoreData: As a local storage to save data 
 - MVP: Architecture Pattern 
+- Sketch App: UI/UX Design
 
 ## Demo GIF
 <img src="https://raw.githubusercontent.com/TahaMahmoud/NotaApp/master/Screenshots/ENDemoGif.gif">
